@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Mulish;
+    background-color: #F8FAFC;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-div {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+}
+
+.img-div svg {
+    width: 100%;
+    height: 100%;
+}
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.form {
+    position: absolute;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+    width: 450px;
+    height: 420px;
+    z-index: 2;
+    padding: 40px;
+    top: 25px;
+    left: 400px;
+}
+
+.form h3 {
+    height: 25px;
+    background-color: white;
+    color: #757575;
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form h1 {
+    height: 35px;
+    color: #333;
+    background-color: white;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    gap: 10px;
+}
+
+#signupForm label {
+    height: 20px;
+    background-color: white;
+    color: #333;
+    font-family: Mulish;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#signupForm input {
+    height: 30px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #DEDEDE;
+    outline: none;
+}
+
+button {
+    height: 35px;
+    width: 99%;
+    align-self: center;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #625BF7 0%, #0befab 100%);
+    cursor: pointer;
+}
+button:hover{
+    scale: 1.05;
+    background: linear-gradient(180deg, #1e97ee 0%, #143de4 100%);
+}
+#signupForm input:focus{
+    background: linear-gradient(180deg, #4ae915 0%, #19e924 100%);
+}
+
+.message {
+    background-color: #FFF;
+    color: #625BF7;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sign-up {
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    left: 520px;
+    background-color: transparent;
+    color: #333;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+span {
+    background-color: transparent;
+    color: #625BF7;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* ----------------------------- */
+@media screen and (max-width: 350px){
+    .form {
+        width: 220px;
+        height: 80%;
+        padding: 10px;
+        top: 20px;
+        left: 35px;
+    }
+    .form1 h1{
+        font-size: 10px;
+    }
+    .sign-up {
+        bottom: 20px;
+        left: 60px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    span {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .message {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 450px) {    
+    .form {
+        width: 250px;
+        height: 80%;
+        padding: 12px;
+        top: 20px;
+        left: 60px;
+    }
+    .form1 h1{
+        font-size: 18px;
+    }
+    .sign-up {
+        bottom: 20px;
+        left: 90px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    span {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .message {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 990px) {
+    .form {
+        width: 350px;
+        height: 80%;
+        padding: 20px;
+        top: 10px;
+        left: 195px;
+    }
+    .form1 h1{
+        font-size: 18px;
+    }
+    .sign-up {
+        bottom: 20px;
+        left: 280px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    span {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .message {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .form {
+        width: 350px;
+        height: 80%;
+        padding: 20px;
+        top: 10px;
+        left: 320px;
+    }
+    .form1 h1{
+        font-size: 18px;
+    }
+    .sign-up {
+        bottom: 20px;
+        left: 370px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .message {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .form {
+        width: 1200px;
+        height: 80%;
+        padding: 20px;
+        top: 30px;
+        left: 650px;
+    }
+    .sign-up {
+        bottom: 80px;
+        left: 880px;
+        font-size: 50px;
+        font-weight: 800;
+    }
+    span {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    .message {
+        font-size: 50px;
+        font-weight: 800;
+    }
+    #signupForm {
+        gap: 30px;
+    }
+    .form h3 {
+        height: 50px;
+        font-size: 38px;
+        font-weight: 600;
+    }
+    
+    .form h1 {
+        height: 70px;
+        font-size: 58px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    #signupForm label {
+        height: 50px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    #signupForm input {
+        height: 70px;
+        font-size: 30px;
+    }
+    
+    button {
+        height: 70px;
+        font-size: 50px;
+    }
+}
